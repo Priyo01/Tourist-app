@@ -1,38 +1,33 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
-import {
-  SafeAreaProvider,
-  useSafeAreaInsets,
-} from 'react-native-safe-area-context';
+import { StatusBar, StyleSheet, useColorScheme, Alert } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { useEffect } from 'react';
+import RootNavigator from './src/Navigations/RootNavigator';
+import { requestLocationPermission } from './src/Utils/PermissionManager';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
 
+  useEffect(() => {
+    const requestPermissionOnStart = async () => {
+      const granted = await requestLocationPermission();
+      if (!granted) {
+        Alert.alert(
+          'Location Permission Required',
+          'This app requires location permission to show maps and provide location-based features.',
+          [{ text: 'OK' }]
+        );
+      }
+    };
+
+
+    requestPermissionOnStart();
+  }, []);
+
   return (
     <SafeAreaProvider>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <AppContent />
+      <RootNavigator />
     </SafeAreaProvider>
-  );
-}
-
-function AppContent() {
-  const safeAreaInsets = useSafeAreaInsets();
-
-  return (
-    <View style={styles.container}>
-      <NewAppScreen
-        templateFileName="App.tsx"
-        safeAreaInsets={safeAreaInsets}
-      />
-    </View>
   );
 }
 

@@ -1,0 +1,2 @@
+- [x] Modify RoomCard component to display "View All" text centered when name is 'View All'
+- [x] Update ExploreDetailsScreen to navigate to 'RoomsList' for the last room card (index === roomData.length - 1)

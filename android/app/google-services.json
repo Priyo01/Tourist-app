@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "972517183163",
+    "project_id": "humraahi-f07f0",
+    "storage_bucket": "humraahi-f07f0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972517183163:android:b6e4ea5d7c85c8b310639e",
+        "android_client_info": {
+          "package_name": "com.humraahi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC32KMqlAnB6MP_0JRulCoX-vUp-jCMlCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
