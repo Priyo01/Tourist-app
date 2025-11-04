@@ -13,7 +13,7 @@ const RoomsList = () => {
       backIconpress={()=>navigation.goBack()}
       />
       <ScrollView>
-        
+        <Text></Text>
       </ScrollView>
     </SafeAreaView>
   );
