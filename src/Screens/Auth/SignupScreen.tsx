@@ -19,6 +19,7 @@ import { fonts } from '../../../assets/fonts/fonts';
 import images from '../../../assets/images/images';
 import Backheader from '../../Components/Backheader';
 import Button from '../../Components/Button';
+import { heading, small, body } from '../../Utils/fontSizes';
 
 const SignupScreen = ({ navigation }: any) => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -243,7 +244,7 @@ const styles = StyleSheet.create({
   },
   Headingtext: {
     fontFamily: fonts.MontserratBold,
-    fontSize: moderateScale(25),
+    fontSize: heading,
     marginRight: spacing.extraLargeSpacing,
     color: colors.black,
   },
@@ -254,7 +255,7 @@ const styles = StyleSheet.create({
   },
   link: {
     color: colors.buttonBlue,
-    fontSize: moderateScale(13),
+    fontSize: small,
     fontFamily: fonts.MontserratSemiBold,
   },
   buttonWrapper: {
@@ -273,7 +274,7 @@ const styles = StyleSheet.create({
   orText: {
     color: colors.black,
     fontFamily: fonts.MontserratMedium,
-    fontSize: moderateScale(13),
+    fontSize: small,
     width: '35%',
     textAlign: 'center',
   },
@@ -287,12 +288,12 @@ const styles = StyleSheet.create({
   },
   Socialoutlinetext: {
     color: colors.black,
-    fontSize: moderateScale(14),
+    fontSize: body,
     fontFamily: fonts.MontserratSemiBold,
   },
   footerText: {
     color: colors.black,
-    fontSize: moderateScale(13),
+    fontSize: small,
     fontFamily: fonts.MontserratMedium,
   },
 });

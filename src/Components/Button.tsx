@@ -13,6 +13,7 @@ import { colors } from '../Utils/colors';
 import { fonts } from '../../assets/fonts/fonts';
 import images from '../../assets/images/images';
 import { spacing } from '../Utils/spacing';
+import { body } from '../Utils/fontSizes';
 
 type ButtonProps = {
   btntxt: string;
@@ -81,7 +82,7 @@ const styles = StyleSheet.create({
   },
   ButtonText: {
     color: colors.white,
-    fontSize: moderateScale(15),
+    fontSize: body,
     fontFamily: fonts.MontserratSemiBold,
   },
 });

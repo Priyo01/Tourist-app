@@ -21,6 +21,7 @@ import images from '../../../assets/images/images';
 import { moderateScale } from 'react-native-size-matters';
 import { spacing } from '../../Utils/spacing';
 import { fonts } from '../../../assets/fonts/fonts';
+import { body, small, heading, subheading } from '../../Utils/fontSizes';
 import ProductCard from '../../Components/ProductCard';
 import PopularDestinations from '../../Components/PopularDestinations';
 import TrendingExperiences from '../../Components/TrendingExperiences';
@@ -235,7 +236,7 @@ const styles = StyleSheet.create({
   toptext: {
     color: colors.black,
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(15),
+    fontSize: body,
   },
   Toptab: {
     paddingHorizontal: spacing.mediumSpacing,
@@ -263,7 +264,7 @@ const styles = StyleSheet.create({
   centerText: {
     color: colors.white,
     fontFamily: fonts.MontserratBold,
-    fontSize: moderateScale(20),
+    fontSize: heading,
     textAlign: 'center',
     marginBottom: spacing.mediumSpacing,
   },
@@ -279,7 +280,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: colors.black,
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(14),
+    fontSize: body,
     textAlign: 'center',
   },
 
@@ -300,7 +301,7 @@ const styles = StyleSheet.create({
   },
   HeadingHead: {
     fontFamily: fonts.MontserratBold,
-    fontSize: moderateScale(20),
+    fontSize: heading,
   },
   secodaryhead: {
     color: colors.black,

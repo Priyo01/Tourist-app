@@ -1,0 +1,14 @@
+import { moderateScale } from 'react-native-size-matters';
+export const caption = moderateScale(12); 
+export const small = moderateScale(12);
+export const body = moderateScale(14); 
+export const bodySmall = moderateScale(14); 
+export const bodyMedium = moderateScale(16); 
+export const bodyLarge = moderateScale(18); 
+export const button = moderateScale(14); 
+export const subheading = moderateScale(16); 
+export const heading = moderateScale(18); 
+export const headingSmall = moderateScale(20); 
+export const headingMedium = moderateScale(24);
+export const headingLarge = moderateScale(28);
+export const title = moderateScale(45); 

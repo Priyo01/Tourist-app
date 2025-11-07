@@ -4,6 +4,7 @@ import { moderateScale } from 'react-native-size-matters';
 import { fonts } from '../../assets/fonts/fonts';
 import { colors } from '../Utils/colors';
 import LinearGradient from 'react-native-linear-gradient';
+import { body, small, heading, subheading } from '../Utils/fontSizes';
 
 const RoomCard = ({
   image,
@@ -108,7 +109,7 @@ const styles = StyleSheet.create({
   roomTitle: {
     color: '#fff',
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(15),
+    fontSize: body,
     textShadowColor: 'rgba(0,0,0,0.7)',
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 5,
@@ -122,7 +123,7 @@ const styles = StyleSheet.create({
   },
 
   roomDetails: {
-    fontSize: moderateScale(12),
+    fontSize: small,
     fontFamily: fonts.MontserratMedium,
     color: colors.white,
   },
@@ -146,13 +147,13 @@ const styles = StyleSheet.create({
   },
 
   priceText: {
-    fontSize: moderateScale(18),
+    fontSize: heading,
     fontFamily: fonts.MontserratBold,
     color: colors.white,
   },
 
   priceLabel: {
-    fontSize: moderateScale(12),
+    fontSize: small,
     fontFamily: fonts.MontserratMedium,
     color: colors.white,
     marginLeft: moderateScale(4),
@@ -170,7 +171,7 @@ const styles = StyleSheet.create({
   checkAvailabilityText: {
     color: '#fff',
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(14),
+    fontSize: body,
   },
 
   priceAndButtonRow: {
@@ -187,7 +188,7 @@ const styles = StyleSheet.create({
   viewAllText: {
     color: colors.black,
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(16),
+    fontSize: subheading,
   },
   viewAllCard: {
     width: moderateScale(220),

@@ -22,6 +22,7 @@ import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamList } from '../../Navigations/types';
 import { spacing } from '../../Utils/spacing';
 import { fonts } from '../../../assets/fonts/fonts';
+import { heading, subheading, body, small, button } from '../../Utils/fontSizes';
 import {
   getCurrentLocation,
   requestLocationPermission,
@@ -150,7 +151,7 @@ const ExploreDetailsScreen = () => {
           source={images.Product}
           style={[styles.imageBackground, { height: moderateScale(300) }]}
         >
-          <SafeAreaView style={styles.safeArea}></SafeAreaView>
+          <SafeAreaView style={styles.safeArea} />
         </ImageBackground>
 
         <View style={{ paddingHorizontal: spacing.mediumSpacing }}>
@@ -207,7 +208,7 @@ const ExploreDetailsScreen = () => {
                       style={{
                         fontFamily: fonts.MontserratMedium,
                         textAlign: 'center',
-                        fontSize: moderateScale(12),
+                        fontSize: small,
                         marginTop: spacing.smallSpacing,
                       }}
                     >
@@ -424,18 +425,18 @@ const styles = StyleSheet.create({
   },
   HeadingTitle: {
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(18),
+    fontSize: heading,
   },
   HeadingSubTitle: {
     fontFamily: fonts.MontserratMedium,
     color: colors.placeholder,
-    fontSize: moderateScale(13),
+    fontSize: body,
     marginBottom: spacing.mediumSpacing,
   },
   DescTitle: {
     color: colors.black,
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(15),
+    fontSize: subheading,
   },
   DescContainer: {
     marginTop: spacing.mediumSpacing,
@@ -445,7 +446,7 @@ const styles = StyleSheet.create({
   description: {
     fontFamily: fonts.MontserratMedium,
     color: colors.black,
-    fontSize: moderateScale(12),
+    fontSize: small,
     textAlign: 'justify',
     lineHeight: 18,
   },
@@ -497,7 +498,7 @@ const styles = StyleSheet.create({
   overlayText: {
     color: colors.white,
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(10),
+    fontSize: small,
   },
   map: {
     height: moderateScale(200),
@@ -515,7 +516,7 @@ const styles = StyleSheet.create({
   permissionButtonText: {
     color: colors.white,
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(14),
+    fontSize: button,
   },
   roomCard: {
     width: moderateScale(150),
@@ -536,7 +537,7 @@ const styles = StyleSheet.create({
   },
   roomName: {
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(14),
+    fontSize: body,
     color: colors.black,
     marginTop: moderateScale(8),
   },
@@ -547,7 +548,7 @@ const styles = StyleSheet.create({
   },
   facilityText: {
     fontFamily: fonts.MontserratMedium,
-    fontSize: moderateScale(10),
+    fontSize: small,
     color: colors.placeholder,
     marginRight: moderateScale(5),
     marginBottom: moderateScale(2),

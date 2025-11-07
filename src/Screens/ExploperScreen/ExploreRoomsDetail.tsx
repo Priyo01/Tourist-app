@@ -15,6 +15,7 @@ import Carousel from 'react-native-reanimated-carousel';
 import ImageViewer from 'react-native-image-zoom-viewer';
 import { spacing } from '../../Utils/spacing';
 import { colors } from '../../Utils/colors';
+import { heading, subheading, body, small, button } from '../../Utils/fontSizes';
 import images from '../../../assets/images/images';
 import { fonts } from '../../../assets/fonts/fonts';
 import { moderateScale } from 'react-native-size-matters';
@@ -68,14 +69,7 @@ const ExploreRoomsDetail = () => {
         autoPlay
         scrollAnimationDuration={1000}
         renderItem={({ item, index }) => (
-          <TouchableOpacity
-            onPress={() => {
-              setVisible(true);
-              setActiveIndex(index);
-            }}
-          >
-            <Image source={{ uri: item.url }} style={styles.carouselImage} />
-          </TouchableOpacity>
+          <Image source={{ uri: item.url }} style={styles.carouselImage} />
         )}
       />
       <View
@@ -178,27 +172,27 @@ const styles = StyleSheet.create({
     elevation: 8,
   },
   title: {
-    fontSize: moderateScale(18),
+    fontSize: heading,
     marginTop: spacing.mediumSpacing,
     color: colors.textPrimary,
     fontFamily: fonts.MontserratSemiBold,
   },
   price: {
-    fontSize: moderateScale(16),
+    fontSize: subheading,
     color: colors.primary,
     marginVertical: spacing.smallSpacing,
     fontFamily: fonts.MontserratMedium,
   },
   sectionTitle: {
-    fontSize: moderateScale(15),
+    fontSize: heading,
     marginTop: spacing.largeSpacing,
     color: colors.textPrimary,
     fontFamily: fonts.MontserratSemiBold,
   },
   facilityBox: {
     backgroundColor: colors.white,
-    height:'auto',
-    marginTop:spacing.smallSpacing,
+    height: 'auto',
+    marginTop: spacing.smallSpacing,
     padding: spacing.mediumSpacing,
     borderRadius: moderateScale(10),
     gap: spacing.smallSpacing,
@@ -219,7 +213,7 @@ const styles = StyleSheet.create({
     tintColor: colors.primary,
   },
   facilityText: {
-    fontSize: moderateScale(12),
+    fontSize: small,
     color: colors.textSecondary,
     fontFamily: fonts.MontserratMedium,
   },
@@ -237,7 +231,7 @@ const styles = StyleSheet.create({
     elevation: 4,
   },
   description: {
-    fontSize: moderateScale(12),
+    fontSize: body,
     lineHeight: moderateScale(18),
     color: colors.textSecondary,
 
@@ -260,7 +254,7 @@ const styles = StyleSheet.create({
   },
   bookButtonText: {
     color: colors.white,
-    fontSize: moderateScale(14),
+    fontSize: button,
     fontFamily: fonts.MontserratSemiBold,
   },
   fixedBackButton: {

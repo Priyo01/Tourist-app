@@ -4,6 +4,7 @@ import { moderateScale } from 'react-native-size-matters';
 import { colors } from '../Utils/colors';
 import { spacing } from '../Utils/spacing';
 import { fonts } from '../../assets/fonts/fonts';
+import { body } from '../Utils/fontSizes';
 
 interface BottomButtonProps {
   price: string;
@@ -45,7 +46,7 @@ const styles = StyleSheet.create({
   },
   priceText: {
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(15),
+    fontSize: body,
   },
   buttonContainer: {
     flex: 2,
@@ -64,7 +65,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(15),
+    fontSize: body,
     color: colors.white,
   },
 });

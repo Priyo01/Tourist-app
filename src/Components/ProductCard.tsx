@@ -8,6 +8,7 @@ import { Rating } from 'react-native-ratings';
 import { useNavigation } from '@react-navigation/native';
 import { RootStackParamList } from '../Navigations/types';
 import { StackNavigationProp } from '@react-navigation/stack';
+import { body, small } from '../Utils/fontSizes';
 
 type ProductCardProps = {
   rating?: number;
@@ -103,7 +104,7 @@ const styles = StyleSheet.create({
   },
   productTitle: {
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(15),
+    fontSize: body,
     color: colors.black,
   },
   ratingContainer: {
@@ -120,12 +121,12 @@ const styles = StyleSheet.create({
   },
   locationText: {
     fontFamily: fonts.MontserratRegular,
-    fontSize: moderateScale(12),
+    fontSize: small,
     color: colors.textMuted,
   },
   priceText: {
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(14),
+    fontSize: body,
     color: colors.black,
   },
 });

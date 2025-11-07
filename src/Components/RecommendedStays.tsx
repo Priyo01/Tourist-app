@@ -5,6 +5,7 @@ import { colors } from '../Utils/colors';
 import { fonts } from '../../assets/fonts/fonts';
 import { spacing } from '../Utils/spacing';
 import { moderateScale } from 'react-native-size-matters';
+import { heading, body, small } from '../Utils/fontSizes';
 
 
 const RecommendedStays = ({ data }: { data: { name: string; image: string; price: string }[] }) => {
@@ -46,7 +47,7 @@ const styles = StyleSheet.create({
   },
   heading: {
     fontFamily: fonts.MontserratBold,
-    fontSize: moderateScale(20),
+    fontSize: heading,
     color: colors.black,
     marginBottom: spacing.mediumSpacing,
   },
@@ -74,12 +75,12 @@ const styles = StyleSheet.create({
   hotelName: {
     fontFamily: fonts.MontserratSemiBold,
     color: colors.white,
-    fontSize: moderateScale(14),
+    fontSize: body,
   },
   price: {
     fontFamily: fonts.MontserratMedium,
     color: colors.white,
-    fontSize: moderateScale(13),
+    fontSize: small,
   },
   button: {
     backgroundColor: colors.white,
@@ -92,7 +93,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: colors.primary,
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(12),
+    fontSize: small,
   },
 });
 

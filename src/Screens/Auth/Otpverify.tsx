@@ -6,7 +6,8 @@ import Backheader from '../../Components/Backheader';
 import { colors } from '../../Utils/colors';
 import { fonts } from '../../../assets/fonts/fonts';
 import { moderateScale } from 'react-native-size-matters';
-import { fontSizes, spacing } from '../../Utils/spacing';
+import { spacing } from '../../Utils/spacing';
+import { bodySmall, headingMedium, bodyMedium, headingSmall } from '../../Utils/fontSizes';
 import Button from '../../Components/Button';
 
 const Otpverify = ({ navigation }: any) => {
@@ -104,12 +105,12 @@ const styles = StyleSheet.create({
   },
   Headingtext: {
     fontFamily: fonts.MontserratBold,
-    fontSize: moderateScale(25),
+    fontSize: headingMedium,
     marginBottom: moderateScale(10),
     color: colors.black,
   },
   subtitle: {
-    fontSize: moderateScale(15),
+    fontSize: bodyMedium,
     fontFamily: fonts.MontserratRegular,
     color: colors.textSecondary,
     marginBottom: moderateScale(10),
@@ -136,7 +137,7 @@ const styles = StyleSheet.create({
     marginHorizontal: moderateScale(5),
   },
   pinCodeText: {
-    fontSize: moderateScale(20),
+    fontSize: headingSmall,
     fontFamily: fonts.MontserratBold,
     color: colors.black,
   },
@@ -151,7 +152,7 @@ const styles = StyleSheet.create({
   },
   placeholderText: {
     color: colors.textSecondary,
-    fontSize: moderateScale(20),
+    fontSize: headingSmall,
   },
   filledPinCodeContainer: {
     backgroundColor: colors.input,
@@ -162,7 +163,7 @@ const styles = StyleSheet.create({
   },
   link: {
     color: colors.black,
-    fontSize: fontSizes.bodySmall,
+    fontSize: bodySmall,
     fontFamily: fonts.MontserratSemiBold,
   },
 });

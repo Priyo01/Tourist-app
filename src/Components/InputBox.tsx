@@ -10,9 +10,11 @@ import {
 } from 'react-native';
 import { colors } from '../Utils/colors';
 import { fonts } from '../../assets/fonts/fonts';
-import { spacing, fontSizes } from '../Utils/spacing';
+import { spacing } from '../Utils/spacing';
+import { caption } from '../Utils/fontSizes';
 import images from '../../assets/images/images';
 import { moderateScale } from 'react-native-size-matters';
+import { small } from '../Utils/fontSizes';
 
 interface InputProps extends TextInputProps {
   placeholder: string;
@@ -130,7 +132,7 @@ const styles = StyleSheet.create({
   },
   inputLabel: {
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(13),
+    fontSize: small,
     color: colors.textPrimary,
     marginBottom: moderateScale(5),
   },
@@ -145,7 +147,7 @@ const styles = StyleSheet.create({
   },
   input: {
     flex: 1,
-    fontSize: moderateScale(13),
+    fontSize: small,
     color: colors.textPrimary,
     height: 40,
     textAlignVertical: 'center',
@@ -172,7 +174,7 @@ const styles = StyleSheet.create({
   },
   errorText: {
     color: colors.error,
-    fontSize: fontSizes.caption,
+    fontSize: caption,
   },
 });
 

@@ -9,11 +9,12 @@ import {
   useColorScheme,
 } from 'react-native';
 import { colors } from '../../Utils/colors';
-import { spacing, fontSizes } from '../../Utils/spacing';
+import { spacing } from '../../Utils/spacing';
 import { fonts } from '../../../assets/fonts/fonts';
 import images from '../../../assets/images/images';
 import Button from '../../Components/Button';
 import { moderateScale } from 'react-native-size-matters';
+import { body, title } from '../../Utils/fontSizes';
 
 const WelcomeScreen = ({ navigation }: any) => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -74,13 +75,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.paragraphHorizontal,
   },
   title: {
-    fontSize: moderateScale(45),
+    fontSize: title,
     fontFamily: fonts.MontserratExtraBold,
     color: colors.white,
     textTransform: 'uppercase',
   },
   subtitle: {
-    fontSize: moderateScale(15),
+    fontSize: body,
     fontFamily: fonts.MontserratRegular,
     color: colors.white,
     marginBottom: spacing.containerLargeSpacing,

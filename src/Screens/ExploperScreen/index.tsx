@@ -6,6 +6,7 @@ import { colors } from '../../Utils/colors';
 import { moderateScale } from 'react-native-size-matters';
 import { spacing } from '../../Utils/spacing';
 import { fonts } from '../../../assets/fonts/fonts';
+import { heading } from '../../Utils/fontSizes';
 import ProductCard from '../../Components/ProductCard';
 import { useNavigation } from '@react-navigation/native';
 
@@ -69,7 +70,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontFamily: fonts.MontserratBold,
-    fontSize: moderateScale(20),
+    fontSize: heading,
     color: colors.black,
     marginBottom: spacing.mediumSpacing,
   },

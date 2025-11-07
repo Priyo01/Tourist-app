@@ -1,4 +1,4 @@
-import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
+import { scale, verticalScale } from 'react-native-size-matters';
 
 export const spacing = {
   containerSmallSpacing: verticalScale(5),
@@ -25,12 +25,4 @@ export const spacing = {
   errorVertical: verticalScale(5),
 };
 
-export const fontSizes = {
-  caption: moderateScale(12),
-  bodySmall: moderateScale(14),
-  bodyMedium: moderateScale(16),
-  bodyLarge: moderateScale(18),
-  headingSmall: moderateScale(20),
-  headingMedium: moderateScale(24),
-  headingLarge: moderateScale(28),
-};
+

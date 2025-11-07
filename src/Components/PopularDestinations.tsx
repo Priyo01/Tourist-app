@@ -5,6 +5,7 @@ import { spacing } from '../Utils/spacing';
 import { colors } from '../Utils/colors';
 import { fonts } from '../../assets/fonts/fonts';
 import images from '../../assets/images/images'; // For right arrow icon if you have it
+import { heading, small, body } from '../Utils/fontSizes';
 
 
 const PopularDestinations = ({ data }: { data: { title: string; image: string }[] }) => {
@@ -51,12 +52,12 @@ const styles = StyleSheet.create({
   },
   heading: {
     fontFamily: fonts.MontserratBold,
-    fontSize: moderateScale(20),
+    fontSize: heading,
     color: colors.black,
   },
   subHeading: {
     fontFamily: fonts.MontserratMedium,
-    fontSize: moderateScale(13),
+    fontSize: small,
     color: colors.black,
     opacity: 0.7,
   },
@@ -84,7 +85,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(14),
+    fontSize: body,
     color: colors.black,
     textAlign: 'center',
     paddingVertical: spacing.smallSpacing,

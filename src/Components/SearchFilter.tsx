@@ -15,6 +15,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import { colors } from '../Utils/colors';
 import { fonts } from '../../assets/fonts/fonts';
 import { spacing } from '../Utils/spacing';
+import { small, bodySmall, heading, headingSmall, bodyMedium, body } from '../Utils/fontSizes';
 
 type FilterOption = {
   id: string;
@@ -250,13 +251,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   subtitle: {
-    fontSize: moderateScale(12),
+    fontSize: small,
     color: colors.textMuted,
     fontFamily: fonts.MontserratRegular,
     marginTop: 4,
   },
   selectedCount: {
-    fontSize: moderateScale(13),
+    fontSize: bodySmall,
     color: colors.textSecondary,
     marginRight: 8,
     fontFamily: fonts.MontserratMedium,
@@ -269,7 +270,7 @@ const styles = StyleSheet.create({
     marginRight: 8,
   },
   resetText: {
-    fontSize: moderateScale(13),
+    fontSize: bodySmall,
     color: colors.textPrimary,
     fontFamily: fonts.MontserratMedium,
   },
@@ -328,7 +329,7 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   closeTextWhite: {
-    fontSize: moderateScale(16),
+    fontSize: bodyMedium,
     color: colors.primaryDark,
     fontFamily: fonts.MontserratSemiBold,
   },
@@ -337,12 +338,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   titleWhite: {
-    fontSize: moderateScale(18),
+    fontSize: heading,
     fontFamily: fonts.MontserratSemiBold,
     color: colors.white,
   },
   subtitleWhite: {
-    fontSize: moderateScale(12),
+    fontSize: small,
     color: colors.white,
     fontFamily: fonts.MontserratRegular,
   },
@@ -370,7 +371,7 @@ const styles = StyleSheet.create({
   resetTextWhite: {
     color: colors.white,
     fontFamily: fonts.MontserratMedium,
-    fontSize: moderateScale(13),
+    fontSize: bodySmall,
   },
   selectedCountWhite: {
     color: colors.white,
@@ -378,7 +379,7 @@ const styles = StyleSheet.create({
     marginLeft: spacing.smallSpacing,
   },
   title: {
-    fontSize: moderateScale(22),
+    fontSize: headingSmall,
     fontFamily: fonts.MontserratSemiBold,
     color: colors.black,
   },
@@ -389,7 +390,7 @@ const styles = StyleSheet.create({
     paddingVertical: 4,
   },
   closeText: {
-    fontSize: moderateScale(18),
+    fontSize: heading,
     color: colors.black,
   },
   card: {
@@ -422,7 +423,7 @@ const styles = StyleSheet.create({
   cardText: {
     fontFamily: fonts.MontserratSemiBold,
     color: colors.white,
-    fontSize: moderateScale(14),
+    fontSize: body,
   },
   checkCircle: {
     position: 'absolute',
@@ -437,7 +438,7 @@ const styles = StyleSheet.create({
   },
   checkMark: {
     color: colors.white,
-    fontSize: moderateScale(14),
+    fontSize: body,
   },
   applyButton: {
     position: 'absolute',
@@ -453,6 +454,6 @@ const styles = StyleSheet.create({
   applyText: {
     fontFamily: fonts.MontserratSemiBold,
     color: colors.white,
-    fontSize: moderateScale(16),
+    fontSize: bodyMedium,
   },
 });

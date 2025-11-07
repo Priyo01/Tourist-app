@@ -6,7 +6,6 @@ import {
   Image,
   TouchableOpacity,
   ScrollView,
-  Dimensions,
 } from 'react-native';
 import Backheader from '../../Components/Backheader';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -16,6 +15,7 @@ import images from '../../../assets/images/images';
 import { moderateScale } from 'react-native-size-matters';
 import { fonts } from '../../../assets/fonts/fonts';
 import { spacing } from '../../Utils/spacing';
+import { body, small, heading } from '../../Utils/fontSizes';
 import ProductCard from '../../Components/ProductCard';
 import Modal from 'react-native-modal';
 import SearchFilter from '../../Components/SearchFilter';
@@ -56,13 +56,6 @@ const SearchScreen = () => {
     );
   };
 
-  const requestPermission = async () => {
-    const granted = await requestLocationPermission();
-    setHasLocationPermission(granted);
-    if (granted) {
-      getCurrentLocation();
-    }
-  };
 
   useEffect(() => {
     const checkPermission = async () => {
@@ -169,7 +162,6 @@ const SearchScreen = () => {
     </SafeAreaView>
   );
 };
-const { width, height } = Dimensions.get('window');
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -199,17 +191,17 @@ const styles = StyleSheet.create({
   },
   locationTitle: {
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(17),
+    fontSize: body,
   },
   locationSubtitle: {
-    fontSize: moderateScale(12),
+    fontSize: small,
   },
   recentSearchContainer: {
     marginTop: spacing.extraLargeSpacing,
     marginHorizontal: spacing.largeSpacing,
   },
   recentSearchTitle: {
-    fontSize: moderateScale(20),
+    fontSize: heading,
     color: colors.black,
     fontFamily: fonts.MontserratSemiBold,
   },
@@ -230,7 +222,7 @@ const styles = StyleSheet.create({
   },
   searchText: {
     fontFamily: fonts.MontserratMedium,
-    fontSize: moderateScale(15),
+    fontSize: body,
   },
   crossIcon: {
     width: moderateScale(20),

@@ -5,6 +5,7 @@ import images from '../../assets/images/images';
 import { fonts } from '../../assets/fonts/fonts';
 import InputBox from './InputBox';
 import { moderateScale } from 'react-native-size-matters';
+import { heading } from '../Utils/fontSizes';
 
 type backheaderProps = {
   backheadertitle?: string;
@@ -73,7 +74,7 @@ const styles = StyleSheet.create({
   },
   headertitle: {
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(19),
+    fontSize: heading,
     color: colors.black,
   },
 });

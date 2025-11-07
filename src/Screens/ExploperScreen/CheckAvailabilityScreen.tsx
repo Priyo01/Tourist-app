@@ -15,6 +15,7 @@ import { colors } from '../../Utils/colors';
 import { spacing } from '../../Utils/spacing';
 import { fonts } from '../../../assets/fonts/fonts';
 import { moderateScale } from 'react-native-size-matters';
+import { body } from '../../Utils/fontSizes';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
@@ -263,7 +264,7 @@ const styles = StyleSheet.create({
   },
   priceText: {
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(15),
+    fontSize: body,
     color: 'white', // Custom color for price text
   },
   buttonContainer: {
@@ -283,7 +284,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(15),
+    fontSize: body,
     color: colors.white,
   },
 });

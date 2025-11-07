@@ -14,6 +14,7 @@ import { colors } from '../../Utils/colors';
 import { spacing } from '../../Utils/spacing';
 import { fonts } from '../../../assets/fonts/fonts';
 import { moderateScale } from 'react-native-size-matters';
+import { heading, subheading, body, small, button } from '../../Utils/fontSizes';
 import BottomButton from '../../Components/BottomButton';
 import { useNavigation } from '@react-navigation/native';
 import type { StackNavigationProp } from '@react-navigation/stack';
@@ -142,21 +143,21 @@ const styles = StyleSheet.create({
   },
   hotelName: {
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(15),
+    fontSize: heading,
   },
   roomType: {
     fontFamily: fonts.MontserratMedium,
-    fontSize: moderateScale(13),
+    fontSize: body,
     color: colors.black,
   },
   amenities: {
     fontFamily: fonts.MontserratMedium,
-    fontSize: moderateScale(13),
+    fontSize: body,
     color: colors.placeholder,
   },
   freeServices: {
     fontFamily: fonts.MontserratMedium,
-    fontSize: moderateScale(13),
+    fontSize: body,
     color: colors.buttonBlue,
   },
   section: {
@@ -166,7 +167,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(17),
+    fontSize: subheading,
     marginTop: spacing.mediumSpacing,
   },
   detailRow: {
@@ -177,11 +178,11 @@ const styles = StyleSheet.create({
   },
   detailLabel: {
     fontFamily: fonts.MontserratMedium,
-    fontSize: moderateScale(15),
+    fontSize: body,
   },
   detailValue: {
     fontFamily: fonts.MontserratMedium,
-    fontSize: moderateScale(12),
+    fontSize: small,
     color: 'grey',
   },
   editButton: {
@@ -195,7 +196,7 @@ const styles = StyleSheet.create({
   },
   editButtonText: {
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(13),
+    fontSize: body,
   },
   detailRowMargin: {
     flexDirection: 'row',
@@ -219,7 +220,7 @@ const styles = StyleSheet.create({
   },
   priceValueText: {
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(13),
+    fontSize: body,
   },
   totalRow: {
     flexDirection: 'row',
@@ -237,7 +238,7 @@ const styles = StyleSheet.create({
   },
   paymentTitle: {
     fontFamily: fonts.MontserratMedium,
-    fontSize: moderateScale(15),
+    fontSize: body,
   },
   addPaymentButton: {
     width: '60%',
@@ -252,7 +253,7 @@ const styles = StyleSheet.create({
   },
   addPaymentText: {
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(14),
+    fontSize: body,
   },
   bottomContainer: {
     height: moderateScale(70),

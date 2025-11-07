@@ -13,7 +13,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { moderateScale } from 'react-native-size-matters';
 import InputBox from '../../Components/InputBox';
 import { colors } from '../../Utils/colors';
-import { spacing, fontSizes } from '../../Utils/spacing';
+import { spacing } from '../../Utils/spacing';
+import { bodySmall, small, headingMedium } from '../../Utils/fontSizes';
 import { fonts } from '../../../assets/fonts/fonts';
 import images from '../../../assets/images/images';
 import Backheader from '../../Components/Backheader';
@@ -186,7 +187,7 @@ const styles = StyleSheet.create({
   },
   Headingtext: {
     fontFamily: fonts.MontserratBold,
-    fontSize: moderateScale(25),
+    fontSize: headingMedium,
     marginRight: spacing.extraLargeSpacing,
     color: colors.black,
     marginTop: moderateScale(10),
@@ -198,7 +199,7 @@ const styles = StyleSheet.create({
   },
   link: {
     color: colors.buttonBlue,
-    fontSize: moderateScale(13),
+    fontSize: small,
     fontFamily: fonts.MontserratSemiBold,
   },
   buttonWrapper: {
@@ -217,7 +218,7 @@ const styles = StyleSheet.create({
   orText: {
     color: colors.black,
     fontFamily: fonts.MontserratMedium,
-    fontSize: moderateScale(13),
+    fontSize: small,
     width: '35%',
     textAlign: 'center',
   },
@@ -231,17 +232,17 @@ const styles = StyleSheet.create({
   },
   Socialoutlinetext: {
     color: colors.black,
-    fontSize: moderateScale(14),
+    fontSize: bodySmall,
     fontFamily: fonts.MontserratSemiBold,
   },
   footerText: {
     color: colors.black,
-    fontSize: moderateScale(13),
+    fontSize: small,
     fontFamily: fonts.MontserratSemiBold,
   },
   registerlink: {
     color: colors.black,
-    fontSize: fontSizes.bodySmall,
+    fontSize: bodySmall,
     fontFamily: fonts.MontserratSemiBold,
   },
 });

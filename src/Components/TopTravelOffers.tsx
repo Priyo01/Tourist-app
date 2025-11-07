@@ -5,6 +5,7 @@ import { moderateScale } from 'react-native-size-matters';
 import { fonts } from '../../assets/fonts/fonts';
 import { colors } from '../Utils/colors';
 import { spacing } from '../Utils/spacing';
+import { headingSmall, small, body, bodySmall } from '../Utils/fontSizes';
 
 
 const TopTravelOffers = ({ data }: { data: { title: string; image: string; price: string; discount: string }[] }) => {
@@ -50,7 +51,7 @@ const styles = StyleSheet.create({
   },
   heading: {
     fontFamily: fonts.MontserratBold,
-    fontSize: moderateScale(20),
+    fontSize: headingSmall,
     color: colors.black,
     marginBottom: spacing.mediumSpacing,
   },
@@ -81,7 +82,7 @@ const styles = StyleSheet.create({
   discount: {
     fontFamily: fonts.MontserratBold,
     color: colors.white,
-    fontSize: moderateScale(12),
+    fontSize: small,
     backgroundColor: colors.primary,
     alignSelf: 'flex-start',
     paddingHorizontal: 8,
@@ -91,12 +92,12 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: fonts.MontserratSemiBold,
     color: colors.white,
-    fontSize: moderateScale(14),
+    fontSize: body,
   },
   price: {
     fontFamily: fonts.MontserratMedium,
     color: colors.white,
-    fontSize: moderateScale(13),
+    fontSize: bodySmall,
   },
   button: {
     backgroundColor: colors.white,
@@ -109,7 +110,7 @@ const styles = StyleSheet.create({
   btnText: {
     fontFamily: fonts.MontserratSemiBold,
     color: colors.primary,
-    fontSize: moderateScale(12),
+    fontSize: small,
   },
 });
 

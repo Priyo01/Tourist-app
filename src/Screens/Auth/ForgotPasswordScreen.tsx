@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Alert } from 'react-native';
 import InputBox from '../../Components/InputBox';
 import { colors } from '../../Utils/colors';
-import { spacing, fontSizes } from '../../Utils/spacing';
+import { spacing } from '../../Utils/spacing';
+import { bodySmall, headingMedium, bodyMedium, small } from '../../Utils/fontSizes';
 import { fonts } from '../../../assets/fonts/fonts';
 import images from '../../../assets/images/images';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -88,7 +89,7 @@ const styles = StyleSheet.create({
   },
 
   subtitle: {
-    fontSize: moderateScale(13),
+    fontSize: small,
     fontFamily: fonts.MontserratRegular,
     color: colors.textSecondary,
     marginBottom: moderateScale(15),
@@ -102,17 +103,17 @@ const styles = StyleSheet.create({
   buttonText: {
     color: colors.white,
     textAlign: 'center',
-    fontSize: moderateScale(15),
+    fontSize: bodyMedium,
     fontFamily: fonts.MontserratMedium,
   },
   link: {
     color: colors.black,
-    fontSize: fontSizes.bodySmall,
+    fontSize: bodySmall,
     fontFamily: fonts.MontserratSemiBold,
   },
   Headingtext: {
     fontFamily: fonts.MontserratBold,
-    fontSize: moderateScale(25),
+    fontSize: headingMedium,
     marginBottom: moderateScale(10),
     color: colors.black,
   },

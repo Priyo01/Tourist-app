@@ -15,6 +15,7 @@ import { fonts } from '../../../assets/fonts/fonts';
 import images from '../../../assets/images/images';
 import Backheader from '../../Components/Backheader';
 import { useNavigation } from '@react-navigation/native';
+import { heading } from '../../Utils/fontSizes';
 
 const { width } = Dimensions.get('window');
 
@@ -184,7 +185,7 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     fontFamily: fonts.MontserratSemiBold,
-    fontSize: moderateScale(20),
+    fontSize: heading,
     color: colors.black,
     marginTop: moderateScale(16),
     marginBottom: moderateScale(12),

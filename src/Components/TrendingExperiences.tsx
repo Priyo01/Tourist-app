@@ -4,6 +4,7 @@ import { moderateScale } from 'react-native-size-matters';
 import { colors } from '../Utils/colors';
 import { fonts } from '../../assets/fonts/fonts';
 import { spacing } from '../Utils/spacing';
+import { headingSmall, body } from '../Utils/fontSizes';
 
 
 const TrendingExperiences = ({ data }: { data: { title: string; image: string }[] }) => {
@@ -34,7 +35,7 @@ const styles = StyleSheet.create({
   },
   heading: {
     fontFamily: fonts.MontserratBold,
-    fontSize: moderateScale(20),
+    fontSize: headingSmall,
     color: colors.black,
     marginBottom: spacing.mediumSpacing,
   },
@@ -62,10 +63,10 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: fonts.MontserratMedium,
-    fontSize: moderateScale(14),
+    fontSize: body,
     color: colors.black,
     padding: spacing.smallSpacing,
-  
+
   },
 });
 

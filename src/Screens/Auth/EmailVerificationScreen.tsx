@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Alert } from 'react-native';
 import InputBox from '../../Components/InputBox';
 import { colors } from '../../Utils/colors';
-import { spacing, fontSizes } from '../../Utils/spacing';
+import { spacing } from '../../Utils/spacing';
+import { headingMedium, bodySmall, bodyMedium } from '../../Utils/fontSizes';
 import { fonts } from '../../../assets/fonts/fonts';
 import images from '../../../assets/images/images';
 
@@ -51,14 +52,14 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
   },
   title: {
-    fontSize: fontSizes.headingMedium,
+    fontSize: headingMedium,
     fontFamily: fonts.MontserratBold,
     color: colors.primary,
     textAlign: 'center',
     marginBottom: spacing.smallSpacing,
   },
   subtitle: {
-    fontSize: fontSizes.bodySmall,
+    fontSize: bodySmall,
     fontFamily: fonts.MontserratRegular,
     color: colors.textSecondary,
     textAlign: 'center',
@@ -73,14 +74,14 @@ const styles = StyleSheet.create({
   buttonText: {
     color: colors.white,
     textAlign: 'center',
-    fontSize: fontSizes.bodyMedium,
+    fontSize: bodyMedium,
     fontFamily: fonts.MontserratMedium,
   },
   link: {
     color: colors.primary,
     textAlign: 'center',
     marginTop: spacing.smallSpacing,
-    fontSize: fontSizes.bodySmall,
+    fontSize: bodySmall,
     fontFamily: fonts.MontserratRegular,
   },
 });
